@@ -24,8 +24,8 @@
         "$character"
       ];
 
-      palette = "tokyo_night";
-      palettes.tokyo_night = {
+      palette = "dont_ask";
+      palettes.dont_ask = {
         color_fg_light = "#b58fff";   # For dark backgrounds
         color_fg_dark  = "#4c3a70";   # For light backgrounds
 
