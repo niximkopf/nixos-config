@@ -243,6 +243,7 @@ capsule = true
 capsule_border = "primary"
 capsule_opacity = 0.75
 capsule_radius = 6
+format = "{:%H:%M}\\n--\\n{:%d\\n%m}"
 
 [widget.control-center]
 enabled = false

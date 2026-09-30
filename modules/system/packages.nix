@@ -68,6 +68,7 @@
     localsend
     easyeffects
     anki
+    gnome-system-monitor
 
     # ── Editor ────────────────────────────────────────────────
     neovim
