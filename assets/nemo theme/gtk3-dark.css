@@ -1,0 +1,161 @@
+/* Noctalia global dark fallback - covers separate toplevels (menus/tooltips) */
+
+window.background {
+    background: #000000;
+    color: #e8d8ff;
+}
+
+menubar {
+    background: #110d1a;
+    color: #e8d8ff;
+    border-bottom: 1px solid #1f1a28;
+    background-image: none;
+}
+
+menubar > menuitem {
+    color: #e8d8ff;
+    background: transparent;
+}
+
+menubar > menuitem:hover {
+    background: alpha(#b58fff, 0.15);
+    color: #b58fff;
+}
+
+menu,
+.menu {
+    background: #110d1a;
+    color: #e8d8ff;
+    border: 1px solid #1f1a28;
+    background-image: none;
+}
+
+menu menuitem,
+.menu menuitem {
+    background: transparent;
+    color: #e8d8ff;
+}
+
+menu menuitem:hover,
+.menu menuitem:hover {
+    background: alpha(#b58fff, 0.15);
+    color: #b58fff;
+}
+
+menu separator,
+.menu separator {
+    background: #1f1a28;
+}
+
+tooltip,
+tooltip * {
+    background: #110d1a;
+    color: #e8d8ff;
+}
+
+tooltip {
+    border: 1px solid #1f1a28;
+}
+
+popover,
+.popover {
+    background: #110d1a;
+    color: #e8d8ff;
+}
+
+toolbar,
+.toolbar,
+.primary-toolbar {
+    background: #110d1a;
+    color: #e8d8ff;
+    border-bottom: 1px solid #1f1a28;
+    background-image: none;
+}
+
+toolbar button,
+.toolbar button,
+headerbar button {
+    background: transparent;
+    color: #e8d8ff;
+    background-image: none;
+}
+
+toolbar button:hover,
+.toolbar button:hover {
+    background: alpha(#e8d8ff, 0.1);
+}
+
+toolbar button:checked,
+.toolbar button:checked {
+    background: alpha(#b58fff, 0.15);
+    color: #b58fff;
+}
+
+.path-bar button {
+    background: transparent;
+    color: #e8d8ff;
+    background-image: none;
+}
+
+.path-bar button:hover {
+    background: alpha(#e8d8ff, 0.1);
+}
+
+.path-bar button:checked {
+    background: alpha(#b58fff, 0.15);
+    color: #b58fff;
+}
+
+statusbar,
+.statusbar {
+    background: #110d1a;
+    color: alpha(#e8d8ff, 0.8);
+    border-top: 1px solid #1f1a28;
+    background-image: none;
+}
+
+headerbar {
+    background: #110d1a;
+    color: #e8d8ff;
+    border-bottom: 1px solid #1f1a28;
+    background-image: none;
+}
+
+entry {
+    background: #000000;
+    color: #e8d8ff;
+    border: 1px solid #1f1a28;
+}
+
+entry:focus {
+    border-color: alpha(#b58fff, 0.6);
+}
+
+entry selection {
+    background: #b58fff;
+    color: #000000;
+}
+
+scrolledwindow,
+viewport,
+treeview,
+treeview.view,
+list,
+.list {
+    background: #000000;
+    color: #e8d8ff;
+    background-image: none;
+}
+
+treeview.view:selected {
+    background: alpha(#b58fff, 0.18);
+    color: #b58fff;
+}
+
+searchbar,
+.search-bar,
+.secondary-toolbar {
+    background: #110d1a;
+    color: #e8d8ff;
+    background-image: none;
+}

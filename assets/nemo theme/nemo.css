@@ -1,0 +1,364 @@
+/* Nemo theme - Noctalia palette */
+
+.nemo-window.background {
+    background-color: #000000;
+    color: #e8d8ff;
+}
+
+.nemo-window.background:backdrop {
+    background-color: #000000;
+    color: alpha(#e8d8ff, 0.7);
+}
+
+/* Menubar */
+.nemo-window menubar {
+    background-color: #110d1a;
+    color: #e8d8ff;
+    border-bottom: 1px solid #1f1a28;
+}
+
+.nemo-window menubar > menuitem:hover {
+    background-color: alpha(#b58fff, 0.15);
+    color: #b58fff;
+}
+
+.nemo-window menu menuitem:hover {
+    background-color: alpha(#b58fff, 0.15);
+    color: #b58fff;
+}
+
+/* Toolbar */
+.nemo-window .toolbar {
+    background-color: #110d1a;
+    color: #e8d8ff;
+    border-bottom: 1px solid #1f1a28;
+}
+
+.nemo-window .toolbar button {
+    background-color: transparent;
+    color: #e8d8ff;
+    border-radius: 10px;
+}
+
+.nemo-window .toolbar button:hover {
+    background-color: alpha(#e8d8ff, 0.1);
+}
+
+.nemo-window .toolbar button:checked {
+    background-color: alpha(#b58fff, 0.15);
+    color: #b58fff;
+}
+
+.nemo-window .toolbar button:disabled {
+    color: alpha(#e8d8ff, 0.35);
+}
+
+/* Pathbar */
+.nemo-window .path-bar button {
+    background-color: transparent;
+    color: #e8d8ff;
+    border-radius: 10px;
+    padding: 6px 10px;
+}
+
+.nemo-window .path-bar button:hover {
+    background-color: alpha(#e8d8ff, 0.1);
+}
+
+.nemo-window .path-bar button:checked {
+    background-color: alpha(#b58fff, 0.15);
+    color: #b58fff;
+}
+
+/* Notebook tabs */
+.nemo-window notebook > header {
+    background-color: #110d1a;
+}
+
+.nemo-window notebook > header tab {
+    background-color: transparent;
+    color: alpha(#e8d8ff, 0.7);
+    padding: 5px 12px;
+}
+
+.nemo-window notebook > header tab:hover {
+    background-color: alpha(#e8d8ff, 0.08);
+    color: #e8d8ff;
+}
+
+.nemo-window notebook > header tab:checked {
+    color: #b58fff;
+}
+
+.nemo-window notebook > header tab indicator {
+    min-height: 3px;
+    background-color: #b58fff;
+}
+
+/* Sidebar */
+.nemo-window .sidebar {
+    background-color: #110d1a;
+    color: #e8d8ff;
+}
+
+.nemo-window .sidebar .view {
+    background-color: transparent;
+    color: #e8d8ff;
+}
+
+.nemo-window .sidebar .view:hover {
+    background-color: alpha(#e8d8ff, 0.1);
+}
+
+.nemo-window .sidebar .view:selected {
+    background-color: alpha(#b58fff, 0.15);
+    color: #b58fff;
+}
+
+.nemo-window .sidebar .view:selected:backdrop {
+    background-color: alpha(#b58fff, 0.08);
+    color: alpha(#b58fff, 0.7);
+}
+
+/* Main file view */
+.nemo-window .view,
+.nemo-window iconview,
+.nemo-window treeview {
+    background-color: #000000;
+    color: #e8d8ff;
+}
+
+.nemo-window .view:hover,
+.nemo-window iconview:hover {
+    background-color: alpha(#e8d8ff, 0.05);
+}
+
+.nemo-window .view:selected,
+.nemo-window iconview:selected,
+.nemo-window treeview:selected {
+    background-color: alpha(#b58fff, 0.18);
+    color: #b58fff;
+}
+
+.nemo-window .nemo-inactive-pane .view:not(:selected),
+.nemo-window .nemo-inactive-pane iconview {
+    background-color: #000000;
+    color: alpha(#e8d8ff, 0.6);
+}
+
+/* Column headers (list view) */
+.nemo-window .view column-header button,
+.nemo-window treeview.header button {
+    background-color: #110d1a;
+    color: #e8d8ff;
+    border-color: #1f1a28;
+}
+
+.nemo-window .view column-header button:hover {
+    background-color: alpha(#e8d8ff, 0.08);
+}
+
+/* Rubberband */
+.nemo-window .rubberband {
+    background-color: alpha(#b58fff, 0.15);
+    border: 1px solid alpha(#b58fff, 0.6);
+}
+
+/* Entry / search bar */
+.nemo-window entry {
+    background-color: #000000;
+    color: #e8d8ff;
+    border: 1px solid #1f1a28;
+    border-radius: 10px;
+}
+
+.nemo-window entry:focus {
+    border-color: alpha(#b58fff, 0.6);
+}
+
+.nemo-window entry selection {
+    background-color: #b58fff;
+    color: #000000;
+}
+
+/* Statusbar */
+.nemo-window statusbar {
+    background-color: #110d1a;
+    color: alpha(#e8d8ff, 0.8);
+    border-top: 1px solid #1f1a28;
+}
+
+/* Canvas / icon label */
+.nemo-window .nemo-canvas-item:selected {
+    background-color: alpha(#b58fff, 0.18);
+    color: #b58fff;
+}
+
+/* ===== Comprehensive dark sweep ===== */
+
+/* Structural containers */
+.nemo-window scrolledwindow,
+.nemo-window viewport,
+.nemo-window .frame {
+    background-color: #000000;
+}
+
+.nemo-window .view.cell,
+.nemo-window treeview.view,
+.nemo-window list,
+.nemo-window .list,
+.nemo-window .content-view {
+    background-color: #000000;
+    color: #e8d8ff;
+}
+
+.nemo-window treeview.view:hover {
+    background-color: alpha(#e8d8ff, 0.05);
+}
+
+.nemo-window treeview.view:selected {
+    background-color: alpha(#b58fff, 0.18);
+    color: #b58fff;
+}
+
+.nemo-window treeview .header,
+.nemo-window treeview.header {
+    background-color: #110d1a;
+    color: #e8d8ff;
+}
+
+/* Paned separator */
+.nemo-window paned > separator {
+    background-color: #110d1a;
+    border: none;
+}
+
+/* Menus and tooltips */
+.nemo-window menu,
+.nemo-window .menu {
+    background-color: #110d1a;
+    color: #e8d8ff;
+    border: 1px solid #1f1a28;
+}
+
+.nemo-window menu menuitem,
+.nemo-window .menu menuitem {
+    background-color: transparent;
+    color: #e8d8ff;
+}
+
+.nemo-window menu separator,
+.nemo-window .menu separator {
+    background-color: #1f1a28;
+}
+
+.nemo-window tooltip {
+    background-color: #110d1a;
+    color: #e8d8ff;
+    border: 1px solid #1f1a28;
+}
+
+.nemo-window tooltip label {
+    color: #e8d8ff;
+}
+
+/* Popovers and dialogs */
+.nemo-window popover,
+.nemo-window .popover {
+    background-color: #110d1a;
+    color: #e8d8ff;
+}
+
+.nemo-window popover > arrow {
+    background-color: #110d1a;
+}
+
+.nemo-window dialog,
+.nemo-window .dialog,
+.nemo-window .window-frame {
+    background-color: #110d1a;
+    color: #e8d8ff;
+}
+
+/* Secondary / search toolbar */
+.nemo-window .secondary-toolbar,
+.nemo-window .search-bar,
+.nemo-window searchbar {
+    background-color: #110d1a;
+    color: #e8d8ff;
+    border-image: none;
+}
+
+.nemo-window .search-bar button,
+.nemo-window searchbar button,
+.nemo-window .secondary-toolbar button {
+    background-color: transparent;
+    color: #e8d8ff;
+}
+
+.nemo-window .search-bar button:hover,
+.nemo-window searchbar button:hover {
+    background-color: alpha(#e8d8ff, 0.1);
+}
+
+/* Inputs and controls */
+.nemo-window spinbutton,
+.nemo-window combobox button,
+.nemo-window check,
+.nemo-window radio,
+.nemo-window switch,
+.nemo-window scale trough,
+.nemo-window progressbar trough,
+.nemo-window levelbar trough {
+    background-color: #000000;
+    color: #e8d8ff;
+    border-color: #1f1a28;
+}
+
+.nemo-window switch:checked {
+    background-color: alpha(#b58fff, 0.6);
+}
+
+.nemo-window switch slider {
+    background-color: #e8d8ff;
+}
+
+.nemo-window progressbar progress {
+    background-color: alpha(#b58fff, 0.6);
+}
+
+.nemo-window combobox arrow {
+    color: #e8d8ff;
+}
+
+/* Headers / tabs / buttons defaults */
+.nemo-window headerbar {
+    background-color: #110d1a;
+    color: #e8d8ff;
+    border-bottom: 1px solid #1f1a28;
+}
+
+.nemo-window .toolbar button,
+.nemo-window headerbar button {
+    color: #e8d8ff;
+}
+
+.nemo-window notebook tab {
+    color: alpha(#e8d8ff, 0.7);
+}
+
+.nemo-window .sidebar .expander {
+    color: #e8d8ff;
+}
+
+.nemo-window .sidebar .places-treeview {
+    background-color: transparent;
+    color: #e8d8ff;
+}
+
+/* Backdrop */
+.nemo-window:backdrop .view,
+.nemo-window:backdrop iconview,
+.nemo-window:backdrop treeview {
+    color: alpha(#e8d8ff, 0.6);
+}
