@@ -8,7 +8,7 @@
 	      enable  = true;
 	      device  = "nodev";
 	      efiSupport = true;
-        theme = ../../assets/grub-theme/KayokoOnikataGRUB;
+        theme = ../../assets/grub-theme/crossgrub;
       };
       efi.canTouchEfiVariables = true;
     };
