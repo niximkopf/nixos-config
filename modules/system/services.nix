@@ -23,6 +23,8 @@
       };
     };
 
+    easyeffects.enable = true;
+
     gvfs.enable = true;
 
     power-profiles-daemon.enable = true;
