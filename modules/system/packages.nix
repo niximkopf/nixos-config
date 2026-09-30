@@ -37,12 +37,14 @@
     ncdu
     lazygit
     file
+    yazi
 
     # ── Design ───────────────────────────────────────────────
     sddm-astronaut
     bibata-cursors
     fastfetch
     cava
+    lavat
     cmatrix
     noctalia
     openrgb
@@ -50,7 +52,7 @@
     (pkgs.callPackage ../../pkgs/momoisay { })
     kitty-themes
 
-    # ── Entwicklung ───────────────────────────────────────────
+    # ── Programming ───────────────────────────────────────────
     python3
     gcc
     gnumake
@@ -65,6 +67,7 @@
     modrinth-app
     localsend
     easyeffects
+    anki
 
     # ── Editor ────────────────────────────────────────────────
     neovim
@@ -75,6 +78,8 @@
     vscode
 
     # ── Media ─────────────────────────────────────────────────
+    loupe
+    showtime
     mpv
     yt-dlp
     rmpc

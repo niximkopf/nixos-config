@@ -6,7 +6,7 @@
 
     settings = {
       format = lib.concatStrings [
-        "[ ┌](color_purple)"
+        "[ ╭](color_purple)"
         "[](color_bg2)"
         "$os"
         "[](bg:color_aqua fg:color_bg2)"
@@ -20,7 +20,7 @@
         "$time"
         "[](fg:color_purple)"
         "$line_break"
-        "[ └─](color_purple)"
+        "[ ╰─](color_purple)"
         "$character"
       ];
 
@@ -30,8 +30,6 @@
         color_fg_dark  = "#4c3a70";   # For light backgrounds
 
         color_red    = "#f07aac";
-        color_orange = "#f5c97a";
-        color_yellow = "#f5c97a";
         color_green  = "#b57bee";
         color_aqua   = "#9b59d6";
         color_blue   = "#d4a5f5";

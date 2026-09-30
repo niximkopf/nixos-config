@@ -1,3 +1,6 @@
+[accessibility]
+ui_scale = 1.1500000096857548
+
 [backdrop]
 enabled = true
 
@@ -5,23 +8,48 @@ enabled = true
 order = [ "default" ]
 
     [bar.default]
-    background_opacity = 0.44999998994171619
+    background_opacity = 0.64999998547136784
     border = "primary"
     capsule_thickness = 0.74999998696148396
-    center = [ "clock", "bar" ]
-    end = [ "recorder", "screenshot", "media", "tray", "notifications", "clipboard", "bluetooth", "volume", "session" ]
-    font_family = "JetBrainsMono NF"
+    center = [ "audio_visualizer", "clock", "audio_visualizer" ]
+    end = [ "tray", "group:g1", "recorder", "group:g2", "session" ]
+    font_family = "Monocraft"
     margin_ends = 0
     position = "left"
     radius = 0
     radius_bottom_left = 0
     radius_top_left = 0
-    start = [ "launcher", "todo", "wallpaper", "workspaces", "audio_visualizer", "cat" ]
-    thickness = 40
+    scale = 1.1500000096857548
+    start = [ "launcher", "workspaces", "cat" ]
+    thickness = 48
     widget_spacing = 10
 
         [bar.default.monitor.DP-1]
         position = "right"
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "primary"
+        enabled = true
+        fill = "surface_variant"
+        id = "g1"
+        members = [ "bar", "todo" ]
+        opacity = 0.75
+        padding = 6.0
+        radius = 6.0
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "primary"
+        enabled = true
+        fill = "surface_variant"
+        id = "g2"
+        members = [ "network", "bluetooth", "volume" ]
+        opacity = 0.75
+        padding = 6.0
+        radius = 6.0
 
 [control_center]
 hidden_tabs = [ "monitor", "power", "network", "weather" ]
@@ -42,7 +70,7 @@ width = 900
 [lockscreen_widgets]
 enabled = false
 schema_version = 2
-widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@DP-2" ]
+widget_order = [ "lockscreen-login-box@winit", "lockscreen-login-box@DP-1", "lockscreen-login-box@DP-2" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -55,6 +83,8 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@DP-2" ]
     cx = 1280.0
     cy = 1258.0
     output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
     rotation = 0.0
     type = "login_box"
 
@@ -80,10 +110,39 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@DP-2" ]
     cx = 960.0
     cy = 898.0
     output = "DP-2"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@winit"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 640.0
+    cy = 618.0
+    output = "winit"
+    placement_height = 0.0
+    placement_width = 0.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@winit".settings]
         background_color = "surface_variant"
         background_opacity = 0.88
         background_radius = 12.0
@@ -110,7 +169,7 @@ enabled = [ "dotnetrob/cat", "noctalia/kaomoji", "nightwatch75/todo", "noctalia/
 app_icon_color = "primary"
 app_icon_colorize = true
 avatar_path = "/home/micha/Pictures/PFP/emilia thuglife.jpeg"
-font_family = "Material Design Icons"
+font_family = "Monocraft"
 
     [shell.screen_corners]
     enabled = true
@@ -128,70 +187,87 @@ source = "community"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "alacritty", "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "niri", "qt", "starship" ]
-    community_ids = [
-        "opencode",
-        "discord",
-        "blender",
-        "libreoffice",
-        "neovim",
-        "vscode",
-        "steam",
-        "fastfetch",
-        "papirus-icons",
-        "bat",
-        "lazygit",
-        "yazi"
-    ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "qt" ]
+    community_ids = [ "opencode", "brave-origin", "discord", "blender", "neovim", "steam", "fastfetch", "bat", "lazygit", "yazi" ]
 
 [wallpaper]
 directory = "/home/micha/Pictures/wallpaper"
 directory_dark = "/home/micha/Pictures/wallpaper"
 
     [wallpaper.default]
-    path = "/home/micha/Pictures/wallpaper/wallhaven-rqj26q.png"
+    path = "/home/micha/Pictures/wallpaper/fav/train-sideview.png"
 
     [wallpaper.last]
-    path = "/home/micha/Pictures/wallpaper/fav/train-sideview.png"
+    path = "/home/micha/Pictures/wallpaper/fav/wallhaven-5ypy88-violett.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/micha/Pictures/wallpaper/fav/train-sideview.png"
+    path = "/home/micha/Pictures/wallpaper/fav/wallhaven-5ypy88-violett.png"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/micha/Pictures/wallpaper/fav/purple-horizon.jpg"
+    path = "/home/micha/Pictures/wallpaper/fav/wallhaven-p9yy39.png"
 
 [widget.audio_visualizer]
-bands = 30
-width = 45
+capsule = true
+capsule_fill = "primary"
+capsule_opacity = 0.65000000000000002
+capsule_padding = 0
+capsule_radius = 6
+color_1 = "on_primary"
+color_2 = "on_primary"
+show_when_idle = true
+width = 128
 
 [widget.bar]
 type = "noctalia/timer:bar"
 
+[widget.bluetooth]
+hide_when_no_connected_device = true
+
 [widget.cat]
+capsule = true
+capsule_border = "primary"
+capsule_opacity = 0.75
+capsule_radius = 6
 cat_size = 28
 run_threshold = 50
+scale = 1.05
 type = "dotnetrob/cat:cat"
 walk_threshold = 10
+
+[widget.clipboard]
+enabled = false
+
+[widget.clock]
+anchor = true
+capsule = true
+capsule_border = "primary"
+capsule_opacity = 0.75
+capsule_radius = 6
 
 [widget.control-center]
 enabled = false
 
 [widget.launcher]
 capsule = true
+capsule_border = "primary"
 capsule_opacity = 0.75
-capsule_radius = 8
+capsule_radius = 6
 custom_image = "/home/micha/.nixos/assets/icons/nixos-customized (1).svg"
 
 [widget.media]
 enabled = false
 
 [widget.network]
+show_label = false
+
+[widget.notifications]
 enabled = false
 
 [widget.recorder]
 capsule = true
 capsule_opacity = 0.55000000000000004
 capsule_radius = 8
+enabled = false
 type = "noctalia/screen_recorder:recorder"
 
 [widget.screenshot]
@@ -199,14 +275,34 @@ enabled = false
 
 [widget.session]
 capsule = true
+capsule_border = "primary"
 capsule_opacity = 0.75
-capsule_radius = 8
+capsule_radius = 6
+icon_color = "error"
 
 [widget.todo]
+label = ""
+show_label = false
 type = "nightwatch75/todo:todo"
 
 [widget.tray]
-enabled = false
+capsule = true
+capsule_border = "primary"
+capsule_opacity = 0.75
+capsule_radius = 6
+icon_color = "primary"
+
+[widget.volume]
+show_label = false
 
 [widget.wallpaper]
 enabled = false
+
+[widget.workspaces]
+capsule = true
+capsule_border = "primary"
+capsule_opacity = 0.75
+capsule_padding = 8
+capsule_radius = 6
+scale = 1.1000000000000001
+style = "minimal"

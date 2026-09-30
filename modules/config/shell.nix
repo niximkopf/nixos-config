@@ -25,6 +25,7 @@
       ff      = "fastfetch";
       momoi   = "momoisay -f";
       matrix  = "cmatrix -C blue";
+      lava    = "lavat -c blue";
     };
 
     initContent = ''
