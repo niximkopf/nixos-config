@@ -27,7 +27,10 @@
   xdg = {
     configFile = {
     "niri/config.kdl".source = ./modules/config/niri-config.kdl;
-    #"rmpc/config.ron".source = ./modules/config/rmpc.ron;
+    "rmpc/config.ron".source = ./modules/config/rmpc/config.ron;
+    "rmpc/theme.ron".source = ./modules/config/rmpc/theme.ron;
+    
+    #xdg.configFile."noctalia/conf.toml".source = .assets/noctalia/conf.toml;
     };
 
     enable = true;
@@ -69,6 +72,8 @@
       icon-theme = "Papirus-Dark";
     };
   };
+
+  services.easyeffects.enable = true;
 
   programs.home-manager.enable = true;
 
