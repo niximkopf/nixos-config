@@ -1,9 +1,6 @@
 { pkgs, lib, ... }:
 
 {
-  # ── OpenRGB ─────────────────────────────────────────────────
-  services.hardware.openrgb.enable = true;
-
   # ── i2c (RAM RGB + Board Controller) ────────────────────────
   hardware.i2c.enable = true;
 
