@@ -65,16 +65,17 @@
     win2xcur
     modrinth-app
     localsend
-    easyeffects
     anki
     gnome-system-monitor
 
     # ── Editor ────────────────────────────────────────────────
+    saber
     neovim
     libreoffice
     krita
     blender
-    obsidian
+    obs-studio
+    davinci-resolve
     vscode
 
     # ── Media ─────────────────────────────────────────────────

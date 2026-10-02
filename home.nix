@@ -29,7 +29,7 @@
     "niri/config.kdl".source = ./modules/config/niri-config.kdl;
     "rmpc/config.ron".source = ./modules/config/rmpc/config.ron;
     "rmpc/theme.ron".source = ./modules/config/rmpc/theme.ron;
-    
+
     #xdg.configFile."noctalia/conf.toml".source = .assets/noctalia/conf.toml;
     };
 
@@ -43,6 +43,8 @@
 
   gtk = {
     enable = true;
+    gtk3.extraConfig.gtk-decoration-layout = "menu:close";
+    gtk4.extraConfig.gtk-decoration-layout = "menu:close";
     theme = {
       name = "catppuccin-mocha-mauve-standard";
       package = pkgs.catppuccin-gtk.override {

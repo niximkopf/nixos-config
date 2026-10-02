@@ -46,7 +46,7 @@ order = [ "default" ]
         enabled = true
         fill = "surface_variant"
         id = "g2"
-        members = [ "network", "bluetooth", "volume" ]
+        members = [ "network", "bluetooth", "volume", "battery" ]
         opacity = 0.75
         padding = 6.0
         radius = 6.0
@@ -168,7 +168,7 @@ enabled = [ "dotnetrob/cat", "noctalia/kaomoji", "nightwatch75/todo", "noctalia/
 [shell]
 app_icon_color = "primary"
 app_icon_colorize = true
-avatar_path = "/home/micha/Pictures/PFP/emilia thuglife.jpeg"
+avatar_path = "/home/micha/.nixos/assets/icons/emilia thuglife.jpeg"
 font_family = "Monocraft"
 
     [shell.screen_corners]
@@ -188,23 +188,23 @@ wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "qt" ]
-    community_ids = [ "opencode", "brave-origin", "discord", "blender", "neovim", "steam", "fastfetch", "bat", "lazygit", "yazi" ]
+    community_ids = [ "opencode", "discord", "blender", "neovim", "steam", "fastfetch", "bat", "lazygit", "yazi" ]
 
 [wallpaper]
 directory = "/home/micha/Pictures/wallpaper"
 directory_dark = "/home/micha/Pictures/wallpaper"
 
     [wallpaper.default]
-    path = "/home/micha/Pictures/wallpaper/fav/train-sideview.png"
+    path = "/home/micha/.nixos/assets/wallpaper/wallhaven-p9yy39.png"
 
     [wallpaper.last]
-    path = "/home/micha/Pictures/wallpaper/fav/wallhaven-5ypy88-violett.png"
+    path = "/home/micha/.nixos/assets/wallpaper/wallhaven-p9yy39.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/micha/Pictures/wallpaper/fav/wallhaven-5ypy88-violett.png"
+    path = "/home/micha/.nixos/assets/wallpaper/wallhaven-5ypy88-violett.png"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/micha/Pictures/wallpaper/fav/wallhaven-p9yy39.png"
+    path = "/home/micha/.nixos/assets/wallpaper/wallhaven-p9yy39.png"
 
 [widget.audio_visualizer]
 capsule = true
@@ -219,6 +219,9 @@ width = 128
 
 [widget.bar]
 type = "noctalia/timer:bar"
+
+[widget.battery]
+show_label = false
 
 [widget.bluetooth]
 hide_when_no_connected_device = true
