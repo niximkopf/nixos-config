@@ -75,7 +75,6 @@
     krita
     blender
     obs-studio
-    davinci-resolve
     vscode
 
     # ── Media ─────────────────────────────────────────────────

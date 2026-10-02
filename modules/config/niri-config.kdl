@@ -187,6 +187,10 @@ binds {
     Mod+Shift+S { screenshot; }
     Alt+Shift+S { screenshot-screen; }
     Alt+S { screenshot-window; }
+    
+    Mod+P { spawn "mpc" "toggle"; }
+    Mod+Comma  { spawn "mpc" "prev"; }
+    Mod+Period { spawn "mpc" "next"; }
 
     Mod+Space   { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
     Mod+Escape  { spawn "noctalia" "msg" "panel-toggle" "session"; }
@@ -291,12 +295,7 @@ binds {
     Mod+BracketLeft  { consume-or-expel-window-left; }
     Mod+BracketRight { consume-or-expel-window-right; }
 
-    // Consume one window from the right to the bottom of the focused column.
-    Mod+Comma  { consume-window-into-column; }
-    // Expel the bottom window from the focused column to the right.
-    Mod+Period { expel-window-from-column; }
-
-    Mod+P { center-column; }
+    //Mod+P { center-column; }
 
     Mod+V       { toggle-window-floating; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
