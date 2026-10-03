@@ -14,6 +14,7 @@
     ../../modules/system/fonts.nix
     ../../modules/system/sddm.nix
     ../../modules/config/nvim.nix
+    ../../modules/config/anki.nix
   ];
 
   networking = {

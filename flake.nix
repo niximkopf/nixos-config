@@ -40,7 +40,7 @@
   {
     nixosConfigurations = {
       nix-btw = mkHost ./hosts/desktop;
-      laptop  = mkHost ./hosts/laptop;
+      rog-strix  = mkHost ./hosts/laptop;
     };
   };
 }

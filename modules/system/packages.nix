@@ -65,7 +65,6 @@
     win2xcur
     modrinth-app
     localsend
-    anki
     gnome-system-monitor
 
     # ── Editor ────────────────────────────────────────────────

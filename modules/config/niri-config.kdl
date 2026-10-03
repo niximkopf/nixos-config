@@ -86,13 +86,9 @@ layout {
     }
 
     border {
-
         width 3
         active-color "#b58fff"
         inactive-color "#4c3a70"
-
-        // Color of the border around windows that request your attention.
-        //urgent-color "#4c3a70"
     }
 
     shadow {
@@ -175,29 +171,30 @@ binds {
 
     Mod+Return { spawn "kitty" "-e" "zsh" "-c" "fastfetch; exec zsh"; }
     Mod+T { spawn "kitty" "-e" "btop"; }
-    Mod+B { spawn "kitty" "-e" "bluetui"; }
-    Mod+W { spawn "kitty" "-e" "nvim"; }
-    Mod+S { spawn "kitty" "-e" "wiremix"; }
-    Mod+D { spawn "kitty" "-e" "ncdu"; }
+    Mod+D { spawn "gnome-disks"; }
     Mod+C { spawn "code"; }
     Mod+E { spawn "nemo"; }
     Mod+M { spawn "kitty" "-e" "rmpc"; }
 
-    Mod+Shift+R { spawn "noctalia" "msg" "screen-recorder"; }
     Mod+Shift+S { screenshot; }
     Alt+Shift+S { screenshot-screen; }
     Alt+S { screenshot-window; }
-    
+
     Mod+P { spawn "mpc" "toggle"; }
     Mod+Comma  { spawn "mpc" "prev"; }
     Mod+Period { spawn "mpc" "next"; }
 
+    Mod+N { spawn "noctalia" "msg" "panel-toggle" "control-center" "notifications"; }
+    Mod+Q { spawn "noctalia" "msg" "panel-toggle" "control-center" "start"; }
+    Mod+B { spawn "noctalia" "msg" "panel-toggle" "control-center" "bluetooth"; }//{ spawn "kitty" "-e" "bluetui"; }
+    Mod+W { spawn "noctalia" "msg" "panel-toggle" "control-center" "network"; }//{ spawn "kitty" "-e" "impala"; }
+    Mod+S { spawn "noctalia" "msg" "panel-toggle" "control-center" "audio"; }//{ spawn "kitty" "-e" "wiremix"; }
+    Mod+V { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
     Mod+Space   { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
     Mod+Escape  { spawn "noctalia" "msg" "panel-toggle" "session"; }
     Mod+Shift+Escape { spawn "noctalia" "msg" "session" "lock-and-suspend"; }
     Mod+Shift+W { spawn "noctalia" "msg" "panel-toggle" "wallpaper"; }
     Mod+Shift+E { spawn "noctalia" "msg" "settings-toggle"; }
-    Mod+Ctrl+V { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }
@@ -295,10 +292,8 @@ binds {
     Mod+BracketLeft  { consume-or-expel-window-left; }
     Mod+BracketRight { consume-or-expel-window-right; }
 
-    //Mod+P { center-column; }
-
-    Mod+V       { toggle-window-floating; }
-    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    Alt+V       { toggle-window-floating; }
+    Alt+Shift+V { switch-focus-between-floating-and-tiling; }
 
     Ctrl+Alt+Delete { quit; }
 
@@ -310,7 +305,7 @@ binds {
     XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
     XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
     XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
-    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
+    XF86MonBrightnessUp  allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
 }
 
