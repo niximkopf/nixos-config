@@ -4,6 +4,7 @@
 (
     address: "127.0.0.1:6600",
     browser_song_sort: [Filename],
+    directories_sort: SortFormat(group_by_type: true, reverse: true),
     volume_step: 5,
     scrolloff: 2,
     max_fps: 60,

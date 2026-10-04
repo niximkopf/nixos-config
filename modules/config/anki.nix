@@ -1,8 +1,45 @@
 { pkgs, ... }:
 
+let
+  backgroundImage = ../../assets/wallpaper/street.png;
+  backgroundName = "street.png";
+
+  customBackgroundSrc = pkgs.fetchFromGitHub {
+    owner = "AnKing-VIP";
+    repo = "Custom-background-image-and-gear-icon";
+    rev = "9706a8f53be26951c057983fb44ea9c89f9208a6";
+    hash = pkgs.lib.fakeHash;   # Nix zeigt beim ersten Build den echten Hash
+  };
+
+  customBackground =
+    (pkgs.anki-utils.buildAnkiAddon {
+      pname = "custom-background";
+      version = "4.6";
+      src = customBackgroundSrc;
+      sourceRoot = "source/addon";
+    }).withConfig {
+      config = {
+        "Image name for background" = backgroundName;
+        "Image name for gear" = "gears.svg";
+        "background-size" = "cover";
+        "background opacity main" = "1";
+        "background opacity review" = "1";
+        "Reviewer image" = true;
+        "Toolbar image" = true;
+      };
+
+      userFiles = pkgs.runCommand "custom-background-user-files" { } ''
+        mkdir -p $out/background $out/gear
+        cp ${backgroundImage} $out/background/${backgroundName}
+        cp ${customBackgroundSrc}/addon/user_files/default_gear/gears.svg $out/gear/gears.svg
+      '';
+    };
+in
+
 {
 environment.systemPackages = [
   (pkgs.anki.withAddons [
+    pkgs.ankiAddons.review-heatmap
     (pkgs.ankiAddons.recolor.withConfig {
       config = {
         version = { major = 3; minor = 1; };

@@ -60,6 +60,7 @@
 
     # ── Apps ──────────────────────────────────────────────────
     firefox
+    librewolf
     (discord.override { withVencord = true; })
     nemo-with-extensions
     win2xcur
