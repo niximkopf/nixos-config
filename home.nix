@@ -30,7 +30,7 @@
     "rmpc/config.ron".source = ./modules/config/rmpc/config.ron;
     "rmpc/theme.ron".source = ./modules/config/rmpc/theme.ron;
 
-    #xdg.configFile."noctalia/conf.toml".source = .assets/noctalia/conf.toml;
+    #xdg.configFile."noctalia/conf.toml".source = .modules/config/noctalia.toml;
     };
 
     enable = true;

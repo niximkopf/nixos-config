@@ -8,7 +8,7 @@ let
     owner = "AnKing-VIP";
     repo = "Custom-background-image-and-gear-icon";
     rev = "9706a8f53be26951c057983fb44ea9c89f9208a6";
-    hash = pkgs.lib.fakeHash;   # Nix zeigt beim ersten Build den echten Hash
+    hash = "sha256-v9/WR+3DK9+byudHFAtsCsPW3WmRVY003+ufEqIFIxM=";
   };
 
   customBackground =
@@ -22,7 +22,7 @@ let
         "Image name for background" = backgroundName;
         "Image name for gear" = "gears.svg";
         "background-size" = "cover";
-        "background opacity main" = "1";
+        "background opacity main" = "0.6";
         "background opacity review" = "1";
         "Reviewer image" = true;
         "Toolbar image" = true;
@@ -39,7 +39,9 @@ in
 {
 environment.systemPackages = [
   (pkgs.anki.withAddons [
+    pkgs.ankiAddons.anki-connect
     pkgs.ankiAddons.review-heatmap
+    customBackground
     (pkgs.ankiAddons.recolor.withConfig {
       config = {
         version = { major = 3; minor = 1; };

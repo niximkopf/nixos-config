@@ -1,6 +1,9 @@
 [accessibility]
 ui_scale = 1.1500000096857548
 
+[audio]
+enable_overdrive = true
+
 [backdrop]
 enabled = true
 
@@ -12,7 +15,7 @@ order = [ "default" ]
     border = "primary"
     capsule_thickness = 0.74999998696148396
     center = [ "audio_visualizer", "clock", "audio_visualizer" ]
-    end = [ "tray", "group:g1", "recorder", "group:g2", "session" ]
+    end = [ "tray", "group:g1", "group:g2", "session" ]
     font_family = "Monocraft"
     margin_ends = 0
     position = "left"
@@ -25,6 +28,8 @@ order = [ "default" ]
     widget_spacing = 10
 
         [bar.default.monitor.DP-1]
+        center = [ "audio_visualizer", "clock", "audio_visualizer" ]
+        end = [ "tray", "group:g1", "recorder", "group:g2", "session" ]
         position = "right"
 
         [[bar.default.capsule_group]]
@@ -34,7 +39,7 @@ order = [ "default" ]
         enabled = true
         fill = "surface_variant"
         id = "g1"
-        members = [ "bar", "todo" ]
+        members = [ "widget_2", "todo" ]
         opacity = 0.75
         padding = 6.0
         radius = 6.0
@@ -52,7 +57,9 @@ order = [ "default" ]
         radius = 6.0
 
 [control_center]
-hidden_tabs = [ "monitor", "power", "network", "weather" ]
+hidden_tabs = [ "media", "monitor", "power", "network", "weather" ]
+sidebar = "none"
+sidebar_section = "none"
 width = 900
 
     [[control_center.shortcuts]]
@@ -66,6 +73,58 @@ width = 900
 
     [[control_center.shortcuts]]
     type = "nightlight"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = [ "desktop-widget-0000000000000002" ]
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 528.0
+    box_width = 2528.0
+    cx = 1264.0
+    cy = 1176.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = -0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        background = false
+        bands = 68
+        centered = false
+        color_1 = "#510BEF"
+        color_2 = "on_surface_variant"
+        reversed = false
+        show_when_idle = true
+
+[idle]
+behavior_order = [ "screen-off", "lock", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 1200.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = true
+    timeout = 1800.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 900.0
+
+[lockscreen]
+blur_intensity = 0.24999999441206455
+tint_intensity = 0.14999999664723873
+wallpaper = "/home/micha/.nixos/assets/wallpaper/wallhaven-5ypg33.jpg"
 
 [lockscreen_widgets]
 enabled = false
@@ -158,18 +217,73 @@ widget_order = [ "lockscreen-login-box@winit", "lockscreen-login-box@DP-1", "loc
         show_unlock_hint = true
         show_weather = true
 
+[notification]
+background_opacity = 0.64999998547136784
+history_retention_hours = 10
+max_visible = 5
+
 [osd]
+background_opacity = 0.64999998547136784
 position = "top_right"
 position_vertical = "top_right"
 
+[plugin_settings."nightwatch75/todo"]
+panel_open_near_click = false
+panel_placement = "floating"
+panel_position = "center"
+
+[plugin_settings."thepunkoff/pomodoro"]
+long-break-duration = 20
+sessions-before-long-break = 2
+short-break-duration = 10
+work-duration = 30
+
 [plugins]
-enabled = [ "dotnetrob/cat", "noctalia/kaomoji", "nightwatch75/todo", "noctalia/timer", "noctalia/screen_recorder" ]
+enabled = [
+    "noctalia/kaomoji",
+    "nightwatch75/todo",
+    "noctalia/timer",
+    "weinguyen/opencode-companion",
+    "thepunkoff/pomodoro",
+    "radimous/prismlauncher-instances",
+    "cleboost/ssh-launcher",
+    "rylos/syncthing",
+    "noctalia/bongocat",
+    "dotnetrob/cat"
+]
 
 [shell]
 app_icon_color = "primary"
 app_icon_colorize = true
-avatar_path = "/home/micha/.nixos/assets/icons/emilia thuglife.jpeg"
+avatar_path = "/home/micha/Pictures/PFP/emilia thuglife.jpeg"
+clipboard_history_max_entries = 50
 font_family = "Monocraft"
+screen_time_enabled = true
+
+    [shell.launcher]
+    categories = false
+    compact = true
+    pinned = [
+        "firefox",
+        "discord",
+        "steam",
+        "nemo",
+        "LocalSend",
+        "code",
+        "anki",
+        "saber",
+        "startcenter",
+        "org.kde.krita",
+        "com.obsproject.Studio",
+        "blender",
+        "org.openrgb.OpenRGB"
+    ]
+
+    [shell.panel]
+    control_center_placement = "floating"
+    control_center_position = "center"
+    session_placement = "floating"
+    session_position = "center"
 
     [shell.screen_corners]
     enabled = true
@@ -177,6 +291,12 @@ font_family = "Monocraft"
 
     [shell.screenshot]
     directory = "/home/micha/Pictures/screenshots"
+
+    [shell.session]
+    show_shortcuts = false
+
+[system.monitor]
+enabled = false
 
 [theme]
 builtin = "Ayu"
@@ -188,26 +308,42 @@ wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "qt" ]
-    community_ids = [ "opencode", "discord", "blender", "neovim", "steam", "fastfetch", "bat", "lazygit", "yazi" ]
+    community_ids = [ "opencode", "brave-origin", "discord", "blender", "neovim", "steam", "fastfetch", "bat", "lazygit", "yazi" ]
 
 [wallpaper]
-directory = "/home/micha/Pictures/wallpaper"
+directory = "/home/micha/.nixos/assets/wallpaper"
 directory_dark = "/home/micha/Pictures/wallpaper"
 
     [wallpaper.default]
-    path = "/home/micha/.nixos/assets/wallpaper/wallhaven-p9yy39.png"
+    path = "/home/micha/.nixos/assets/wallpaper/holy_nixos.png"
 
     [wallpaper.last]
-    path = "/home/micha/.nixos/assets/wallpaper/wallhaven-p9yy39.png"
+    path = "/home/micha/Pictures/wallpaper/wallhaven-5ypy88-logo.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/micha/.nixos/assets/wallpaper/wallhaven-5ypy88-violett.png"
+    path = "/home/micha/Pictures/wallpaper/wallhaven-5ypy88-logo.png"
 
     [wallpaper.monitors.DP-2]
     path = "/home/micha/.nixos/assets/wallpaper/wallhaven-p9yy39.png"
 
+    [[wallpaper.favorite]]
+    community_palette = "Lilac AMOLED"
+    palette_source = "community"
+    path = "/home/micha/.nixos/assets/wallpaper/wallhaven-5ypy88-violett.png"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    community_palette = "Lilac AMOLED"
+    palette_source = "community"
+    path = "/home/micha/.nixos/assets/wallpaper/wallhaven-p9yy39.png"
+    theme_mode = "dark"
+
+[weather]
+enabled = false
+
 [widget.audio_visualizer]
 capsule = true
+capsule_border = "on_primary"
 capsule_fill = "primary"
 capsule_opacity = 0.65000000000000002
 capsule_padding = 0
@@ -217,9 +353,6 @@ color_2 = "on_primary"
 show_when_idle = true
 width = 128
 
-[widget.bar]
-type = "noctalia/timer:bar"
-
 [widget.battery]
 show_label = false
 
@@ -227,15 +360,14 @@ show_label = false
 hide_when_no_connected_device = true
 
 [widget.cat]
+audio_spectrum = true
 capsule = true
 capsule_border = "primary"
 capsule_opacity = 0.75
 capsule_radius = 6
-cat_size = 28
-run_threshold = 50
-scale = 1.05
-type = "dotnetrob/cat:cat"
-walk_threshold = 10
+scale = 1.1000000000000001
+tappy_mode = true
+type = "noctalia/bongocat:cat"
 
 [widget.clipboard]
 enabled = false
@@ -301,6 +433,10 @@ show_label = false
 
 [widget.wallpaper]
 enabled = false
+
+[widget.widget_2]
+type = "thepunkoff/pomodoro:widget"
+widget-glyph-main = "time-duration-30"
 
 [widget.workspaces]
 capsule = true
