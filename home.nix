@@ -10,9 +10,9 @@
   ];
 
   home = {
-    username      = "micha";
-    homeDirectory = "/home/micha";
-    stateVersion  = "25.11";
+    username      = "niximkopf";
+    homeDirectory = "/home/niximkopf";
+    stateVersion  = "26.05";
 
     pointerCursor = {
       enable = true;
@@ -30,7 +30,7 @@
     "rmpc/config.ron".source = ./modules/config/rmpc/config.ron;
     "rmpc/theme.ron".source = ./modules/config/rmpc/theme.ron;
 
-    #xdg.configFile."noctalia/conf.toml".source = .modules/config/noctalia.toml;
+    "noctalia/conf.toml".source = ./modules/config/noctalia.toml;
     };
 
     enable = true;

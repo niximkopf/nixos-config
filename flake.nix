@@ -31,7 +31,7 @@
             useGlobalPkgs   = true;
             useUserPackages = true;
             extraSpecialArgs = { inherit inputs; };
-            users.micha.imports = [ (import ./home.nix) ];
+            users.niximkopf.imports = [ (import ./home.nix) ];
           };
         }
       ];

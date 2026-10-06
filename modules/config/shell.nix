@@ -14,8 +14,8 @@
       lt      = "eza --tree --icons";
       cat     = "bat";
       cd      = "z";
-      rebuild = "sudo nixos-rebuild switch --flake";
-      update  = "sudo nix flake update --flake";
+      rebuild = "sudo nixos-rebuild switch --flake .nixos";
+      update  = "sudo nix flake update --flake .nixos";
       cleanup = "sudo nix-collect-garbage -d";
       gs      = "git status";
       gp      = "git push";

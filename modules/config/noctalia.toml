@@ -124,7 +124,7 @@ behavior_order = [ "screen-off", "lock", "lock-and-suspend" ]
 [lockscreen]
 blur_intensity = 0.24999999441206455
 tint_intensity = 0.14999999664723873
-wallpaper = "/home/micha/.nixos/assets/wallpaper/wallhaven-5ypg33.jpg"
+wallpaper = "/home/niximkopf/.nixos/assets/wallpaper/wallhaven-5ypg33.jpg"
 
 [lockscreen_widgets]
 enabled = false
@@ -255,7 +255,7 @@ enabled = [
 [shell]
 app_icon_color = "primary"
 app_icon_colorize = true
-avatar_path = "/home/micha/Pictures/PFP/emilia thuglife.jpeg"
+avatar_path = "/home/niximkopf/Pictures/PFP/emilia thuglife.jpeg"
 clipboard_history_max_entries = 50
 font_family = "Monocraft"
 screen_time_enabled = true
@@ -264,7 +264,7 @@ screen_time_enabled = true
     categories = false
     compact = true
     pinned = [
-        "firefox",
+        "librewolf",
         "discord",
         "steam",
         "nemo",
@@ -290,7 +290,7 @@ screen_time_enabled = true
     size = 16
 
     [shell.screenshot]
-    directory = "/home/micha/Pictures/screenshots"
+    directory = "/home/niximkopf/Pictures/screenshots"
 
     [shell.session]
     show_shortcuts = false
@@ -299,7 +299,7 @@ screen_time_enabled = true
 enabled = false
 
 [theme]
-builtin = "Ayu"
+builtin = "Catppuccin"
 community_palette = "Lilac AMOLED"
 mode = "dark"
 pure_black_dark = true
@@ -308,34 +308,37 @@ wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "qt" ]
-    community_ids = [ "opencode", "brave-origin", "discord", "blender", "neovim", "steam", "fastfetch", "bat", "lazygit", "yazi" ]
+    community_ids = [ "opencode", "discord", "blender", "steam", "kitty", "yazi" ]
 
 [wallpaper]
-directory = "/home/micha/.nixos/assets/wallpaper"
-directory_dark = "/home/micha/Pictures/wallpaper"
+directory = "/home/niximkopf/.nixos/assets/wallpaper"
+directory_dark = "/home/niximkopf/Pictures/wallpaper"
 
     [wallpaper.default]
-    path = "/home/micha/.nixos/assets/wallpaper/holy_nixos.png"
+    path = "/home/niximkopf/.nixos/assets/wallpaper/holy_nixos.png"
 
     [wallpaper.last]
-    path = "/home/micha/Pictures/wallpaper/wallhaven-5ypy88-logo.png"
+    path = "/home/niximkopf/Pictures/wallpaper/wallhaven-5ypy88-logo.png"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/niximkopf/.nixos/assets/wallpaper/holy_nixos.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/micha/Pictures/wallpaper/wallhaven-5ypy88-logo.png"
+    path = "/home/niximkopf/Pictures/wallpaper/wallhaven-5ypy88-logo.png"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/micha/.nixos/assets/wallpaper/wallhaven-p9yy39.png"
+    path = "/home/niximkopf/.nixos/assets/wallpaper/wallhaven-p9yy39.png"
 
     [[wallpaper.favorite]]
     community_palette = "Lilac AMOLED"
     palette_source = "community"
-    path = "/home/micha/.nixos/assets/wallpaper/wallhaven-5ypy88-violett.png"
+    path = "/home/niximkopf/.nixos/assets/wallpaper/wallhaven-5ypy88-violett.png"
     theme_mode = "dark"
 
     [[wallpaper.favorite]]
     community_palette = "Lilac AMOLED"
     palette_source = "community"
-    path = "/home/micha/.nixos/assets/wallpaper/wallhaven-p9yy39.png"
+    path = "/home/niximkopf/.nixos/assets/wallpaper/wallhaven-p9yy39.png"
     theme_mode = "dark"
 
 [weather]
@@ -388,7 +391,7 @@ capsule = true
 capsule_border = "primary"
 capsule_opacity = 0.75
 capsule_radius = 6
-custom_image = "/home/micha/.nixos/assets/icons/nixos-customized (1).svg"
+custom_image = "/home/niximkopf/.nixos/assets/icons/nixos-customized (1).svg"
 
 [widget.media]
 enabled = false

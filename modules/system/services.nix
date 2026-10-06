@@ -15,9 +15,9 @@
   services = {
     mpd = {
       enable = true;
-      user = "micha";
+      user = "niximkopf";
       settings = {
-        music_directory = "/home/micha/Music/Playlists";
+        music_directory = "/home/niximkopf/Music/Playlists";
         audio_output = [
           { type = "pipewire"; name = "PipeWire"; }
           { type = "fifo"; name = "Cava FIFO"; path = "/tmp/mpd.fifo"; format = "44100:16:2"; }

@@ -59,7 +59,6 @@
     quickshell
 
     # ── Apps ──────────────────────────────────────────────────
-    firefox
     librewolf
     (discord.override { withVencord = true; })
     nemo-with-extensions

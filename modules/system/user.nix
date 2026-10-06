@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  users.users.micha = {
+  users.users.niximkopf = {
     isNormalUser = true;
     shell        = pkgs.zsh;
     extraGroups  = [
