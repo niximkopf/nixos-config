@@ -248,8 +248,7 @@ enabled = [
     "radimous/prismlauncher-instances",
     "cleboost/ssh-launcher",
     "rylos/syncthing",
-    "noctalia/bongocat",
-    "dotnetrob/cat"
+    "noctalia/bongocat"
 ]
 
 [shell]
