@@ -23,7 +23,7 @@ let
         "Image name for gear" = "gears.svg";
         "background-size" = "cover";
         "background opacity main" = "0.6";
-        "background opacity review" = "1";
+        "background opacity review" = "0.4";
         "Reviewer image" = true;
         "Toolbar image" = true;
       };
