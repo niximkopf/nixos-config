@@ -63,9 +63,9 @@
     (discord.override { withVencord = true; })
     nemo-with-extensions
     win2xcur
-    modrinth-app
     localsend
     gnome-system-monitor
+    easyeffects
 
     # ── Editor ────────────────────────────────────────────────
     saber
