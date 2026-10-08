@@ -306,7 +306,7 @@ source = "community"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "qt" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "qt" ]
     community_ids = [ "opencode", "discord", "blender", "steam", "yazi" ]
 
 [wallpaper]
