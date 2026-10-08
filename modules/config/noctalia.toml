@@ -272,8 +272,9 @@ screen_time_enabled = true
         "anki",
         "saber",
         "startcenter",
-        "org.kde.krita",
+        "com.github.wwmm.easyeffects",
         "com.obsproject.Studio",
+        "org.kde.krita",
         "blender",
         "org.openrgb.OpenRGB"
     ]
@@ -307,7 +308,7 @@ wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "qt" ]
-    community_ids = [ "opencode", "discord", "blender", "steam", "yazi" ]
+    community_ids = [ "discord", "blender", "steam", "yazi" ]
 
 [wallpaper]
 directory = "/home/niximkopf/.nixos/assets/wallpaper"

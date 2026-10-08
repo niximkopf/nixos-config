@@ -18,7 +18,7 @@
   ];
 
   networking = {
-    hostName = "rog-strix";
+    hostName = "tpad490";
     networkmanager.enable = true;
     firewall = {
       enable          = true;
@@ -27,13 +27,9 @@
     };
   };
 
-  services.xserver.videoDrivers = [ "nvidia" ];
-
-  hardware.nvidia = {
-    modesetting.enable = true;
-    powerManagement.enable = false;
-    open = true;
-    nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+  services = {
+    xserver = {
+    	videoDrivers = [ "intel" ];
+    };
   };
 }

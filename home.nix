@@ -29,7 +29,7 @@
     "niri/config.kdl".source = ./modules/config/niri-config.kdl;
     "rmpc/config.ron".source = ./modules/config/rmpc/config.ron;
     "rmpc/theme.ron".source = ./modules/config/rmpc/theme.ron;
-
+    "gtk-3.0/gtk3-dark.css".source = ./assets/color-themes/gtk3-dark.css;
     "noctalia/conf.toml".source = ./modules/config/noctalia.toml;
     };
 
@@ -53,9 +53,12 @@
         size = "standard";
       };
     };
+    gtk3.extraCss = ''
+      @import "gtk3-dark.css";
+      @import url("noctalia.css");
+    '';
     gtk4.extraCss = ''
       @import url("noctalia.css");
-      @import 'colors.css';
     '';
     gtk4.theme = null;
     iconTheme = {

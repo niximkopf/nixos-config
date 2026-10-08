@@ -41,6 +41,7 @@
     nixosConfigurations = {
       nix-btw = mkHost ./hosts/desktop;
       rog-strix  = mkHost ./hosts/laptop;
+      tpad490 = mkHost ./hosts/thinkpad;
     };
   };
 }
