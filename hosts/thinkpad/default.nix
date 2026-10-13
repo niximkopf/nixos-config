@@ -15,6 +15,8 @@
     ../../modules/system/sddm.nix
     ../../modules/config/nvim.nix
     ../../modules/config/anki.nix
+    ../../modules/gaming/launcher.nix
+    ../../modules/gaming/runescape-server.nix
   ];
 
   networking = {

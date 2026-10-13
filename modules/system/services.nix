@@ -3,7 +3,6 @@
 {
   programs = {
     zsh.enable = true;
-    steam.enable = true;
     nix-ld.enable = true;
     dconf.enable = true;
     niri.enable = true;

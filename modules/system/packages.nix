@@ -65,7 +65,6 @@
     win2xcur
     localsend
     gnome-system-monitor
-    easyeffects
 
     # ── Editor ────────────────────────────────────────────────
     saber

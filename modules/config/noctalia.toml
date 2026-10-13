@@ -308,7 +308,7 @@ wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "qt" ]
-    community_ids = [ "discord", "blender", "steam", "yazi" ]
+    community_ids = [ "discord", "blender", "yazi" ]
 
 [wallpaper]
 directory = "/home/niximkopf/.nixos/assets/wallpaper"
