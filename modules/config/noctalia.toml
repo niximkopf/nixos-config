@@ -397,6 +397,7 @@ custom_image = "/home/niximkopf/.nixos/assets/icons/nixos-customized (1).svg"
 enabled = false
 
 [widget.network]
+enabled = false
 show_label = false
 
 [widget.notifications]

@@ -65,6 +65,7 @@
     win2xcur
     localsend
     gnome-system-monitor
+    prismlauncher
 
     # ── Editor ────────────────────────────────────────────────
     saber
