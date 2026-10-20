@@ -60,12 +60,14 @@
 
     # ── Apps ──────────────────────────────────────────────────
     librewolf
+    firefox
     (discord.override { withVencord = true; })
     nemo-with-extensions
     win2xcur
     localsend
     gnome-system-monitor
     prismlauncher
+    easyeffects
 
     # ── Editor ────────────────────────────────────────────────
     saber

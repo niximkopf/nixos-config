@@ -7,7 +7,6 @@
     ./modules/config/starship.nix
     ./modules/config/fastfetch
     ./modules/config/kitty.nix
-    ./modules/config/easyeffects.nix
   ];
 
   home = {
