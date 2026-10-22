@@ -263,7 +263,7 @@ screen_time_enabled = true
     categories = false
     compact = true
     pinned = [
-        "librewolf",
+        "firefox",
         "discord",
         "steam",
         "nemo",
