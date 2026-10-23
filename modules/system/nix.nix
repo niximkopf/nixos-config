@@ -13,8 +13,9 @@
       options   = "--delete-older-than 7d";
     };
   };
+
+  security.rtkit.enable = true;
   
   nixpkgs.config.allowUnfree = true;
-
   system.stateVersion = "26.05";
 }
