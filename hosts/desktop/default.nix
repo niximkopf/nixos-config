@@ -10,9 +10,12 @@
     ../../modules/system/packages-stable.nix
     ../../modules/system/timezone.nix
     ../../modules/system/user.nix
-    ../../modules/system/asus.nix
     ../../modules/system/fonts.nix
-    ../../modules/system/sddm.nix
+    ../../modules/services/asus.nix
+    ../../modules/services/sddm.nix
+    ../../modules/services/audio.nix
+    ../../modules/services/programs.nix
+    ../../modules/services/llama.nix
     ../../modules/config/nvim.nix
     ../../modules/config/anki.nix
   ];
