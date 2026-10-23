@@ -124,7 +124,7 @@ behavior_order = [ "screen-off", "lock", "lock-and-suspend" ]
 [lockscreen]
 blur_intensity = 0.24999999441206455
 tint_intensity = 0.14999999664723873
-wallpaper = "/home/niximkopf/.nixos/assets/wallpaper/wallhaven-5ypg33.jpg"
+wallpaper = "/home/niximkopf/.nixos/assets/wallpaper/wallhaven-6le8eq.jpg"
 
 [lockscreen_widgets]
 enabled = false
