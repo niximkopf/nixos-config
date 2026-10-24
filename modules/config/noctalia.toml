@@ -254,7 +254,7 @@ enabled = [
 [shell]
 app_icon_color = "primary"
 app_icon_colorize = true
-avatar_path = "/home/niximkopf/Pictures/PFP/emilia thuglife.jpeg"
+avatar_path = "/home/niximkopf/.nixos/assets/icons/emilia thuglife.jpeg"
 clipboard_history_max_entries = 50
 font_family = "Monocraft"
 screen_time_enabled = true
