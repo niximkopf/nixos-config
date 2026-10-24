@@ -30,6 +30,7 @@
     "rmpc/config.ron".source = ./modules/config/rmpc/config.ron;
     "rmpc/theme.ron".source = ./modules/config/rmpc/theme.ron;
     "gtk-3.0/gtk3-dark.css".source = ./assets/color-themes/gtk3-dark.css;
+    "gtk-3.0/nemo.css".source = ./assets/color-themes/nemo.css;
     "noctalia/conf.toml".source = ./modules/config/noctalia.toml;
     };
 
@@ -55,6 +56,7 @@
     };
     gtk3.extraCss = ''
       @import "gtk3-dark.css";
+      @import "nemo.css";
       @import url("noctalia.css");
     '';
     gtk4.extraCss = ''

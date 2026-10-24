@@ -15,6 +15,7 @@
     nix-tree
     nvd
     qbittorrent
+    xwayland-satellite
 
     # ── Terminal Tools ─────────────────────────────────
     eza
