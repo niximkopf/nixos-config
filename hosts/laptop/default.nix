@@ -30,6 +30,10 @@
 
   services.xserver.videoDrivers = [ "nvidia" ];
 
+  boot.extraModprobeConfig = ''
+    options snd_hda_intel index=1,0
+  '';
+
   hardware.nvidia = {
     modesetting.enable = true;
     powerManagement.enable = false;
