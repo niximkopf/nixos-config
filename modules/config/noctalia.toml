@@ -318,13 +318,13 @@ directory_dark = "/home/niximkopf/Pictures/wallpaper"
     path = "/home/niximkopf/.nixos/assets/wallpaper/holy_nixos.png"
 
     [wallpaper.last]
-    path = "/home/niximkopf/Pictures/wallpaper/wallhaven-5ypy88-logo.png"
+    path = "/home/niximkopf/.nixos/assets/wallpaper/wallhaven-5ypy88-logo.png"
 
     [wallpaper.monitors.eDP-1]
     path = "/home/niximkopf/.nixos/assets/wallpaper/holy_nixos.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/niximkopf/Pictures/wallpaper/wallhaven-5ypy88-logo.png"
+    path = "/home/niximkopf/.nixos/assets/wallpaper/wallhaven-5ypy88-logo.png"
 
     [wallpaper.monitors.DP-2]
     path = "/home/niximkopf/.nixos/assets/wallpaper/wallhaven-p9yy39.png"
@@ -332,13 +332,25 @@ directory_dark = "/home/niximkopf/Pictures/wallpaper"
     [[wallpaper.favorite]]
     community_palette = "Lilac AMOLED"
     palette_source = "community"
-    path = "/home/niximkopf/.nixos/assets/wallpaper/wallhaven-5ypy88-violett.png"
+    path = "/home/niximkopf/.nixos/assets/wallpaper/wallhaven-5ypy88-logo.png"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    community_palette = "Lilac AMOLED"
+    palette_source = "community"
+    path = "/home/niximkopf/.nixos/assets/wallpaper/holy_nixos.png"
     theme_mode = "dark"
 
     [[wallpaper.favorite]]
     community_palette = "Lilac AMOLED"
     palette_source = "community"
     path = "/home/niximkopf/.nixos/assets/wallpaper/wallhaven-p9yy39.png"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    community_palette = "Lilac AMOLED"
+    palette_source = "community"
+    path = "/home/niximkopf/.nixos/assets/wallpaper/wallhaven-6le8eq.jpg"
     theme_mode = "dark"
 
 [weather]
