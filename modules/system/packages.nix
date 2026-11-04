@@ -16,6 +16,7 @@
     nvd
     qbittorrent
     xwayland-satellite
+    amdgpu_top
 
     # ── Terminal Tools ─────────────────────────────────
     eza
