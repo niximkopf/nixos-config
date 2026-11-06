@@ -14,6 +14,7 @@
     ../../modules/services/sddm.nix
     ../../modules/services/audio.nix
     ../../modules/services/programs.nix
+    ../../modules/services/llama.nix
     ../../modules/config/nvim.nix
     ../../modules/config/anki.nix
   ];
@@ -23,7 +24,7 @@
     networkmanager.enable = true;
     firewall = {
       enable          = true;
-      allowedTCPPorts = [ 53317 ];
+      allowedTCPPorts = [ 53317 8080 ];
       allowedUDPPorts = [ 53317 ];
     };
   };
@@ -33,4 +34,6 @@
     	videoDrivers = [ "amdgpu" ];
     };
   };
+
+  virtualisation.docker.enable = true;
 }
