@@ -15,6 +15,7 @@
     ../../modules/services/audio.nix
     ../../modules/services/programs.nix
     ../../modules/services/llama.nix
+    ../../modules/services/docker.nix
     ../../modules/config/nvim.nix
     ../../modules/config/anki.nix
   ];
@@ -34,6 +35,4 @@
     	videoDrivers = [ "amdgpu" ];
     };
   };
-
-  virtualisation.docker.enable = true;
 }
