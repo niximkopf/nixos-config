@@ -10,8 +10,6 @@
 
     shellAliases = {
       ls      = "eza --icons";
-      ll      = "eza -la --icons";
-      lt      = "eza --tree --icons";
       cat     = "bat";
       cd      = "z";
       rebuild = "sudo nixos-rebuild switch --flake ~/.nixos";
@@ -30,7 +28,6 @@
 
     initContent = ''
       eval "$(zoxide init zsh)"
-      eval "$(atuin init zsh)"
     '';
   };
 }

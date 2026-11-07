@@ -2,44 +2,29 @@
 
 {
   environment.systemPackages = with pkgs; [
-    # ── System Tools ──────────────────────────────────────────
-    git
+    # ── Tools ──────────────────────────────────────────
     nodejs
     wget
     curl
     unzip
     psmisc
-    pciutils
-    usbutils
     lshw
     nix-tree
     nvd
     qbittorrent
     xwayland-satellite
     amdgpu_top
-
-    # ── Terminal Tools ─────────────────────────────────
     eza
     bat
     ripgrep
     fd
-    dust
-    procs
     zoxide
     fzf
-    delta
     gitui
-    atuin
-    zellij
     btop
     opencode
-    croc
-    bluetui
-    wiremix
     ncdu
-    lazygit
     file
-    yazi
 
     # ── Design ───────────────────────────────────────────────
     sddm-astronaut
@@ -66,7 +51,6 @@
     nemo-with-extensions
     win2xcur
     localsend
-    gnome-system-monitor
     prismlauncher
     easyeffects
 
@@ -74,14 +58,12 @@
     saber
     neovim
     libreoffice
-    krita
     blender
     obs-studio
     vscode
 
     # ── Media ─────────────────────────────────────────────────
     loupe
-    showtime
     mpv
     yt-dlp
     rmpc
