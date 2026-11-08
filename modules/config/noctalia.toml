@@ -39,7 +39,7 @@ order = [ "default" ]
         accordion_direction = "end"
         border = "primary"
         enabled = true
-        fill = "surface_variant"
+        fill = "surface_container"
         id = "g1"
         members = [ "widget_2", "todo" ]
         opacity = 0.75
@@ -51,7 +51,7 @@ order = [ "default" ]
         accordion_direction = "end"
         border = "primary"
         enabled = true
-        fill = "surface_variant"
+        fill = "surface_container"
         id = "g2"
         members = [ "network", "bluetooth", "volume", "battery" ]
         opacity = 0.75
@@ -310,7 +310,7 @@ wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "qt" ]
-    community_ids = [ "discord", "blender", "yazi" ]
+    community_ids = [ "discord", "blender", "prismlauncher" ]
 
 [wallpaper]
 directory = "/home/niximkopf/.nixos/assets/wallpaper"
@@ -416,13 +416,6 @@ show_label = false
 
 [widget.notifications]
 enabled = false
-
-[widget.recorder]
-capsule = true
-capsule_opacity = 0.55000000000000004
-capsule_radius = 8
-enabled = false
-type = "noctalia/screen_recorder:recorder"
 
 [widget.screenshot]
 enabled = false

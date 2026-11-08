@@ -16,7 +16,6 @@
     ../../modules/services/programs.nix
     ../../modules/services/docker.nix
     ../../modules/config/nvim.nix
-    ../../modules/config/anki.nix
   ];
 
   networking = {
