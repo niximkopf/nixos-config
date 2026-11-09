@@ -8,5 +8,6 @@
         dconf.enable = true;
         niri.enable = true;
         gnome-disks.enable = true;
+        coolercontrol.enable = true;
     };
 }

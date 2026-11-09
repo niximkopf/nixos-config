@@ -24,6 +24,7 @@
     btop
     ncdu
     file
+    lm_sensors
 
     # ── Design ───────────────────────────────────────────────
     sddm-astronaut
@@ -62,6 +63,7 @@
     vscode
 
     # ── Media ─────────────────────────────────────────────────
+    shortwave
     loupe
     mpv
     yt-dlp

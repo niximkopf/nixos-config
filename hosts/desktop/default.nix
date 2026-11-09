@@ -16,6 +16,7 @@
     ../../modules/services/programs.nix
     ../../modules/services/llama.nix
     ../../modules/services/docker.nix
+    ../../modules/services/vm.nix
     ../../modules/config/nvim.nix
     ../../modules/config/anki.nix
   ];

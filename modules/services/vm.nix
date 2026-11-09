@@ -1,9 +1,14 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 
 {
-  # ── GPU Passthrough (später einrichten) ──────────────────────
-  # virtualisation.libvirtd.enable = true;
-  # virtualisation.libvirtd.qemu.ovmf.enable = true;
-  # boot.kernelParams = [ "amd_iommu=on" "iommu=pt" ];
-  # boot.kernelModules = [ "vfio" "vfio_iommu_type1" "vfio_pci" ];
+  virtualisation.libvirtd = {
+    enable = true;
+
+    qemu = {
+      swtpm.enable = true;
+      vhostUserPackages = [ pkgs.virtiofsd ];
+    };
+  };
+
+  programs.virt-manager.enable = true;
 }
