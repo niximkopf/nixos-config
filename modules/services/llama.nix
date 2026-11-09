@@ -10,6 +10,8 @@
       port = 8080;
       n-gpu-layers = 50;
       ctx-size = 32768;
+      cache-type-k = "q8_0";
+      cache-type-v = "q8_0";
       jinja = true;
     };
   };

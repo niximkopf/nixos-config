@@ -1,10 +1,10 @@
-{ pkgs, ... }:
+{ pkgs-stable, ... }:
 
 let
   backgroundImage = ../../assets/wallpaper/street.png;
   backgroundName = "street.png";
 
-  customBackgroundSrc = pkgs.fetchFromGitHub {
+  customBackgroundSrc = pkgs-stable.fetchFromGitHub {
     owner = "AnKing-VIP";
     repo = "Custom-background-image-and-gear-icon";
     rev = "9706a8f53be26951c057983fb44ea9c89f9208a6";
@@ -12,7 +12,7 @@ let
   };
 
   customBackground =
-    (pkgs.anki-utils.buildAnkiAddon {
+    (pkgs-stable.anki-utils.buildAnkiAddon {
       pname = "custom-background";
       version = "4.6";
       src = customBackgroundSrc;
@@ -28,7 +28,7 @@ let
         "Toolbar image" = true;
       };
 
-      userFiles = pkgs.runCommand "custom-background-user-files" { } ''
+      userFiles = pkgs-stable.runCommand "custom-background-user-files" { } ''
         mkdir -p $out/background $out/gear
         cp ${backgroundImage} $out/background/${backgroundName}
         cp ${customBackgroundSrc}/addon/user_files/default_gear/gears.svg $out/gear/gears.svg
@@ -38,11 +38,11 @@ in
 
 {
 environment.systemPackages = [
-  (pkgs.anki.withAddons [
-    pkgs.ankiAddons.anki-connect
-    pkgs.ankiAddons.review-heatmap
+  (pkgs-stable.anki.withAddons [
+    pkgs-stable.ankiAddons.anki-connect
+    pkgs-stable.ankiAddons.review-heatmap
     customBackground
-    (pkgs.ankiAddons.recolor.withConfig {
+    (pkgs-stable.ankiAddons.recolor.withConfig {
       config = {
         version = { major = 3; minor = 1; };
         colors = {

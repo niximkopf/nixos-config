@@ -8,6 +8,7 @@
     ./modules/config/fastfetch
     ./modules/config/kitty.nix
     ./modules/config/gtk.nix
+    ./modules/config/opencode.nix
   ];
 
   home = {

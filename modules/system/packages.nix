@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-stable, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -22,7 +22,6 @@
     fzf
     gitui
     btop
-    opencode
     ncdu
     file
 
@@ -68,5 +67,5 @@
     yt-dlp
     rmpc
     mpc
-    ];
+  ];
 }
