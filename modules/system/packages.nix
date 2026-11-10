@@ -56,6 +56,7 @@
 
     # ── Editor ────────────────────────────────────────────────
     saber
+    gnome-text-editor
     neovim
     libreoffice
     blender
