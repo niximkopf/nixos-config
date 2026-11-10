@@ -3,6 +3,7 @@
 {
   imports = [
     ./hardware-configuration.nix
+
     ../../modules/system/services.nix
     ../../modules/system/boot.nix
     ../../modules/system/nix.nix
@@ -10,6 +11,7 @@
     ../../modules/system/timezone.nix
     ../../modules/system/user.nix
     ../../modules/system/fonts.nix
+
     ../../modules/services/asus.nix
     ../../modules/services/sddm.nix
     ../../modules/services/audio.nix
@@ -17,6 +19,7 @@
     ../../modules/services/llama.nix
     ../../modules/services/docker.nix
     ../../modules/services/vm.nix
+    
     ../../modules/config/nvim.nix
     ../../modules/config/anki.nix
   ];
