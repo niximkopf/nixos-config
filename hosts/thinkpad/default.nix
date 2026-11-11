@@ -16,7 +16,6 @@
     ../../modules/services/sddm.nix
     ../../modules/services/audio.nix
     ../../modules/services/programs.nix
-    ../../modules/services/docker.nix
     
     ../../modules/config/nvim.nix
   ];
